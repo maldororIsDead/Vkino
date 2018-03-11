@@ -23,11 +23,8 @@ module.exports = {
                     loaders: [
                         {
                             test: /\.css$/,
-                            use: [
-                                'vue-style-loader',
-                                'css-loader'
-                            ],
-                        }
+                            loader: 'style!css'
+                        },
                     ]
 
                 }
