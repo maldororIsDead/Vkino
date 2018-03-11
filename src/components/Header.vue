@@ -37,7 +37,7 @@
                 </div>
                 <div class="header-menu">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="header-logo navbar-brand" href="/">Вкино</a>
+                        <router-link class="header-logo navbar-brand" to="/">Вкино</router-link>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
