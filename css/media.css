@@ -1,0 +1,225 @@
+@media only screen and (min-width : 480px) {
+    .footer-nav {
+        padding: 0 1rem 0.5rem;
+    }
+
+    .slider-page {
+        width: 28rem;
+        margin: 0 auto;
+    }
+
+    .page-timetable_btn {
+        padding: 3px 20px;
+    }
+}
+
+@media only screen and (min-width : 576px) {
+    .header-contacts {
+        order: 1;
+    }
+    .form-inline .form-control {
+        width: 8rem;
+    }
+    .movie-img img {
+        width: auto;
+        max-height: 300px;
+    }
+    .movie-title {
+        min-height: 4rem;
+    }
+    .movie-link {
+        justify-content: space-between;
+    }
+
+    .films-block_premiere .movie-title {
+        min-height: 2rem;
+    }
+    .movie-date {
+        text-align: left;
+    }
+
+    .page-sessions_block {
+        padding: 1rem 4rem;
+    }
+
+    .page-timetable_title,
+    .page-sessions_city {
+        font-size: 1.6rem;
+    }
+
+    .page-cinema_sessions {
+        margin: 5px 15px;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+    .form-inline .form-control {
+        width: 10rem;
+        justify-content: flex-end;
+    }
+
+    .slider-block .slider-title {
+        font-size: 1.5rem;
+    }
+
+    .page-timetable_select select {
+        width: 13rem;
+    }
+
+    .footer-title {
+        text-align: left;
+    }
+    .footer-mobile {
+        justify-content: flex-start;
+    }
+
+}
+
+@media only screen and (min-width : 992px) {
+    .form-inline .form-control {
+        width: auto;
+    }
+
+    .slider-block .slider-title,
+    .slider-news .slider-title {
+        font-size: 2rem;
+    }
+
+    .header-search {
+        align-self: center;
+    }
+
+    .navbar {
+        background: transparent;
+    }
+
+    .navbar,
+    .header-multilang,
+    .dropdown-menu{
+        padding: 0;
+    }
+
+    .navbar-nav{
+        border: 3px solid black;
+        background: #fff;
+    }
+
+    .dropdown-menu {
+        border-bottom: 3px solid black;
+    }
+
+    .dropdown-item {
+        border-style: solid solid none solid;
+        border-width: 3px;
+    }
+
+    .header-menu .header-logo {
+        padding: 0 0.7rem 0.5rem 4.9rem;
+        font-size: 3rem;
+    }
+
+    .header-menu .header-logo {
+        margin: -2.1rem 0 0 -0.5rem;
+    }
+
+    .header-logo:before {
+        content: "";
+        background: url('../src/assets/logo.png') no-repeat 50% 50%;
+        position: absolute;
+        top: 3px;
+        left: -12px;
+        width: 101px;
+        height: 74px;
+        background-size: 70px;
+    }
+
+    .nav-item {
+        padding: 0 0.4rem;
+    }
+
+    .header-social_list {
+        background: transparent;
+    }
+
+    .social-item {
+        padding: 0.2rem;
+        background: #fff;
+    }
+
+    .movie-img img {
+        max-height: 360px;
+    }
+
+    .films-block_movies {
+        margin-right: 0;
+    }
+
+    .page-button_group {
+        justify-content: flex-start;
+    }
+
+    .page-cinema_sessions {
+        margin: 5px 30px;
+    }
+
+    .empty {
+        height: 19rem;
+        position: relative;
+    }
+
+    footer {
+        position: relative;
+        margin-top: -20rem;
+        height: 20rem;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width : 1200px) {
+    .header-menu .header-logo {
+        padding-bottom: 0.2rem;
+    }
+
+    .nav-item {
+        padding: 0 1rem;
+    }
+
+    .slider-block .slider-title,
+    .slider-news .slider-title {
+        font-size: 2.8rem;
+    }
+
+    .header-contacts {
+        font-size: 1.4rem;
+    }
+
+    .films-block_actual .container {
+        max-width: 1110px;
+    }
+
+    .movie-link {
+        justify-content: center;
+    }
+    .movie-date {
+        text-align: center;
+    }
+
+    .page-movie_info td {
+        padding-right: 50px;
+    }
+
+    .poster-img img {
+        max-height: 250px;
+    }
+
+    footer {
+        margin-top: -20rem;
+        height: 24rem;
+    }
+
+    footer .container {
+        padding-top: 3rem;
+    }
+
+}
