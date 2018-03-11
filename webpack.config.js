@@ -20,19 +20,16 @@ module.exports = {
                 test: /\.vue$/,
                 loader: 'vue-loader',
                 options: {
-                    loaders: [
-                        {
-                            test: /\.css$/,
-                            loader: 'style!css'
-                        },
-                    ]
+                    loaders: {
+
+                    }
 
                 }
             },
-         /*   {
+            {
                 test: /\.html$/,
                 use: ['html-loader']
-            },*/
+            },
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
