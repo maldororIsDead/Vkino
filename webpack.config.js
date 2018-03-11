@@ -6,7 +6,7 @@ module.exports = {
     entry: './src/main.js',
     output: {
         path: path.resolve(__dirname, './dist'),
-        publicPath: '/dist/',
+      //  publicPath: '/dist/',
         filename: 'build.js'
     },
     module: {
@@ -41,8 +41,8 @@ module.exports = {
                 loader: 'file-loader',
                 options: {
                     name: '[name].[ext]?[hash]',
-                    outputPath: 'assets/',
-                    publicPath: 'assets/'
+                    outputPath: 'src/assets/',
+                    publicPath: 'src/assets/'
                 }
             }
         ]
