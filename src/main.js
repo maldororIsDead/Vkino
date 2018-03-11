@@ -4,9 +4,6 @@ import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 import $ from 'jquery'
 
-import '../css/style.css';
-import '../css/media.css';
-
 import Poster from './components/Poster'
 import movieCard from './components/movieCard'
 import Home from './components/Home'

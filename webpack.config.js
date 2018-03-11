@@ -1,12 +1,11 @@
 var path = require('path')
 var webpack = require('webpack')
-var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     entry: './src/main.js',
     output: {
         path: path.resolve(__dirname, './dist'),
-      //  publicPath: '/dist/',
+        publicPath: '/dist/',
         filename: 'build.js'
     },
     module: {
@@ -21,16 +20,22 @@ module.exports = {
                 test: /\.vue$/,
                 loader: 'vue-loader',
                 options: {
-                    loaders: {}
+                    loaders: [
+                        {
+                            test: /\.css$/,
+                            use: [
+                                'vue-style-loader',
+                                'css-loader'
+                            ],
+                        }
+                    ]
 
-
-                    // other vue-loader options go here
                 }
             },
-            {
+         /*   {
                 test: /\.html$/,
                 use: ['html-loader']
-            },
+            },*/
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
@@ -58,11 +63,6 @@ module.exports = {
         noInfo: true,
         overlay: true
     },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: 'index.html'
-        })
-    ],
     performance: {
         hints: false
     },
