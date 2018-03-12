@@ -138,11 +138,13 @@
                 days: [],
                 month: '',
                 check: '',
-                endpoint: 'http://api.kinopoisk.cf/getFilm?filmID=714888',
+                endpoint: 'http://kino-teatr.ua:8081/services/api/genre/8?apiKey=pol1kh111',
                 producers: [],
                 writers: [],
                 sessions: [],
-                posters: []
+                posters: [],
+                key: 'pol1kh111',
+                post: ''
             }
         },
         methods: {
@@ -166,12 +168,13 @@
                     }
                 }
             },
-            getAllPosts: function () {
+            getFilmInfo: function () {
                 //генерация аякс запроса
-                this.$http.get(this.endpoint).then(function (response) {
-                    console.log(response);
+                this.$http.get('http://kino-teatr.ua:8081/services/api/film/48519?apiKey=pol1kh111').then(response => {
+                    this.post = response.body;
+                    console.log(this.post);
                 }, function (error) {
-                    alert('error');
+                   console.log(error);
                 })
             }
         },
@@ -180,7 +183,7 @@
             let movieId = this.$route.params.id;
             this.movie = this.movies[movieId];
             this.selectCity(this.selected);
-            this.getAllPosts();
+            this.getFilmInfo();
         },
         mounted() {
             $('.slider-page').slick({
@@ -190,6 +193,7 @@
                 fade: true,
                 cssEase: 'linear'
             });
+
         }
     }
 </script>
