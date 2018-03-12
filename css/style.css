@@ -118,7 +118,7 @@ footer {
     background-color: #fff;
 }
 
-.navbar-light .navbar-brand:hover {
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
     color: #fff;
 }
 
