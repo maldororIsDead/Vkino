@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Иллюзия обмана 2",
-    "src": "../src/assets/movie-1.jpg",
+    "src": "./src/assets/movie-1.jpg",
     "rentalStatus": true,
     "datePremiere": "04.06.2016",
     "youtube": "<iframe width=\"100%\" height=\"500px\" src=\"https://www.youtube.com/embed/InqU8CLwbPg\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>",
